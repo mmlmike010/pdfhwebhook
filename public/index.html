@@ -11,44 +11,5 @@
     
     <h1>Test</h1>
 
-    <script>
-        
-        // Using proxy URL here https://cors-anywhere.herokuapp.com via https://stackoverflow.com/questions/43871637/no-access-control-allow-origin-header-is-present-on-the-requested-resource-whe/43881141
-        // have to use proxy b/c fh forces https
-        
-        // var settings = {
-        //     "async": true,
-        //     "crossDomain": true,
-        //     "url": "https://cors-anywhere.herokuapp.com/http://api.firehydrant.io/v1/environments/7414b75b-cb3a-4cfc-8c39-33153286d7b3",
-        //     "method": "DELETE",
-        //     "headers": {
-        //         "authorization": "fhb-2d977c33b2370a170423bfdfea01e0d8"
-        //     }
-        // }
-
-        // $.ajax(settings).done(function (response) {
-        //     console.log(response);
-        //     console.log('this finished');
-        // });
-
-        var settings = {
-            "async": true,
-            "crossDomain": true,
-            "url": "https://api.firehydrant.io/v1/services",
-            "method": "POST",
-            "headers": {
-                "content-type": "application/json",
-                "authorization": "fhb-2d977c33b2370a170423bfdfea01e0d8"
-            },
-            "processData": false,
-            "data": "{\"name\":\"api made service\",\"description\":\"service was made via api request\",\"labels\":{},\"functionalities\":[{\"summary\":\"string\",\"id\":\"string\"}]}"
-        }
-
-        $.ajax(settings).done(function (response) {
-            console.log(response);
-            console.log('api req was a success');
-        });
-    </script>
-
 </body>
 </html>
