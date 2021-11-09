@@ -34,7 +34,7 @@ app.post('/webhook', (request, response) => {
     "path": "/v1/incidents",
     "headers": {
     "content-type": "application/json",
-    "authorization": "fhb-61cb8cc3a30ecaada06273dffe034a5c"
+    "authorization": ""
     }
   };
   
